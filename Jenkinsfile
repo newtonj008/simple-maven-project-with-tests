@@ -1,14 +1,5 @@
 pipeline {
-  agent {
-    kubernetes {
-      label BUILD_TAG
-      containerTemplate {
-        name 'maven'
-        image 'maven'
-        command 'sleep'
-        args 'infinity'
-      }
-    }
+ 
   }
   stages {
     stage('Run') {
