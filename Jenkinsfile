@@ -1,5 +1,5 @@
 pipeline {
- 
+ agent('any'){
 
   stages {
     stage('Run') {
@@ -15,4 +15,5 @@ pipeline {
       junit '**/target/surefire-reports/TEST-*.xml'
     }
   }
+}
 }
